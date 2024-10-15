@@ -1,3 +1,4 @@
+import { Comfortaa } from 'next/font/google';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -9,11 +10,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        customBackground: '#F9FAFF',
+        customBlack: '#25282B',
+        customLightGray: '#828282',
+        customBerry: '990F4B'
+      },
+      fontFamily: {
+        playfair: ['--font-playfair'],
+        nunito: ['--font-nunito'],
+        roboto: ['--font-roboto'],
+        comfortaa: ['--font-comfortaa']
       },
     },
   },
   plugins: [],
+
 };
 export default config;
