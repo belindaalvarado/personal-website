@@ -20,7 +20,7 @@ const roboto = Roboto({
   subsets: ['latin'],
   weight: ['500'],
   style: ['normal'],
-  variable: '--roboto'
+  variable: '--font-roboto'
 });
 
 const comfortaa = Comfortaa({
@@ -32,9 +32,8 @@ const comfortaa = Comfortaa({
 
 export const metadata: Metadata = {
   title: 'Belindas Personal Portfolio',
-  description:"Here is my personal website where tell a little about me and highlight some projects I've worked on.",
+  description: 'Here is my personal website where tell a little about me and highlight some projects I have worked on.',
 };
-
 
 export default function RootLayout({
   children,
