@@ -6,6 +6,7 @@ const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['700'],
   style: ['normal'],
+  display: 'swap', 
   variable: '--font-playfair'
 });
 
@@ -13,6 +14,7 @@ const nunito = Nunito({
   subsets: ['latin'],
   weight: ['400'],
   style: ['normal'],
+  display: 'swap', 
   variable: '--font-nunito'
 });
 
@@ -20,14 +22,16 @@ const roboto = Roboto({
   subsets: ['latin'],
   weight: ['500'],
   style: ['normal'],
-  variable: '--font-roboto'
+  display: 'swap', 
+  variable: '--font-roboto',
 });
 
 const comfortaa = Comfortaa({
   subsets: ['latin'],
   weight: ['700'],
   style: ['normal'],
-  variable: '--font-comfortaa'
+  display: 'swap', 
+  variable: '--font-comfortaa',
 });
 
 export const metadata: Metadata = {
@@ -41,10 +45,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${playfair.className} ${nunito.className} ${roboto.className} ${comfortaa.className} antialiased`}
-      >
+    <html lang="en"  className={`${playfair.className} ${nunito.className} ${roboto.className} ${comfortaa.className}`}
+    >
+      <body>
         {children}
       </body>
     </html>

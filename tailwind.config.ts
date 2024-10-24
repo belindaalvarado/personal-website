@@ -16,14 +16,14 @@ const config: Config = {
         customBorder:'#E8ECF4'
       },
       fontFamily: {
-        playfair: ['--font-playfair'],
-        nunito: ['--font-nunito'],
-        roboto: ['--font-roboto'],
-        comfortaa: ['--font-comfortaa']
+        playfair: ['var(--font-playfair)', 'playfair'],
+        nunito: ['var(--font-nunito)', 'nunito'],
+        roboto: ['var(--font-roboto)', 'roboto'],
+        comfortaa: ['var(--font-comfortaa)', 'comfortaa']
       },
     },
   },
   plugins: [],
 
 };
-export default config;
+export default config;
